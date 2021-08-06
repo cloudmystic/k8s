@@ -8,7 +8,7 @@ servers = [
         :box => "centos/7",
         #:box_version => "20180831.0.0",
         :eth1 => "192.168.33.10",
-		:eth2 => "192.168.0.17",
+	:eth2 => "192.168.0.17",
         :mem => "2048",
         :cpu => "2"
     },
@@ -18,18 +18,18 @@ servers = [
         :box => "centos/7",
         #:box_version => "20180831.0.0",
         :eth1 => "192.168.33.20",
-		:eth2 => "192.168.0.18",
+	:eth2 => "192.168.0.18",
         :mem => "2048",
         :cpu => "2"
     }
     #{
     #    :name => "k8s-node-2",
     #    :type => "node",
-    #	:box => "centos/7",
+    #	 :box => "centos/7",
     #    #:box => "ubuntu/xenial64",
     #    #:box_version => "20180831.0.0",
     #    :eth1 => "192.168.33.30",
-    #	:eth2 => "192.168.0.19",
+    #	 :eth2 => "192.168.0.19",
     #    :mem => "2048",
     #    :cpu => "2"
     #}
@@ -197,7 +197,7 @@ Vagrant.configure("2") do |config|
             #config.vm.box_version = opts[:box_version]
             config.vm.hostname = opts[:name]
             config.vm.network :private_network, ip: opts[:eth1]
-			config.vm.network :public_network, ip: opts[:eth2]
+	    config.vm.network :public_network, ip: opts[:eth2]
 
             config.vm.provider "virtualbox" do |v|
 
