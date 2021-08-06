@@ -184,7 +184,7 @@ SCRIPT
 
 $msg = <<MSG
 ------------------------------------------------------
-	echo "####****#### CONNECT TO THE CONTROL PLANE BY TYPING COMMAND 'vagrant ssh k8s-master' ####****####"
+	####****#### CONNECT TO THE CONTROL PLANE BY TYPING COMMAND 'vagrant ssh <server_name>' ####****####
 ------------------------------------------------------
 MSG
 
