@@ -9,6 +9,8 @@ stages:
     - stage: Test
       displayName: 'Test Pipeline'
       jobs:
+      - job: Test
+        steps:
         - script: |
             echo "**** Test Pipeline ****"
           displayName: 'Test Pipeline'
